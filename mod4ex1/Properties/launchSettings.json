@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "mod4ex1": {
+      "commandName": "Project",
+      "commandLineArgs": "12345 12 546 387 995"
+    }
+  }
+}
