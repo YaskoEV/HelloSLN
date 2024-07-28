@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Geometry
 {
-    public class Circle
+    public class Circle : Shape
     {
         public int x { get; set; }
         public int y { get; set; }
@@ -23,7 +23,8 @@ namespace Geometry
                 }
         }
 
-        public Circle(int x, int y, double r) 
+        public Circle(int x, int y, double r, string color = DEF_COLOR) 
+            : base(color) 
         {
             this.x = x;
             this.y = y;
@@ -51,14 +52,20 @@ namespace Geometry
 
         public void Move(int x, int y) 
         {
-            this.x += x;
+            this.x += x; 
             this.y += y;
             //Console.WriteLine("Внимание! Координаты фигуры изменились!\nНовые кооррдинаты центра: x = {0}, y = {1}", x, y);
         }
 
-        public void PrintInfo()
-        { 
-            Console.WriteLine("Координаты центра окружности: x = {0}, y = {1}\nРадиус окружности = {2}", x, y, checkR); 
+        public override void Draw()
+        {
+            Console.WriteLine("Окружность:");
+            Console.WriteLine("Координаты центра окружности: x = {0}, y = {1}\nРадиус окружности = {2}, цвет {3}", x, y, checkR, Color); 
+        }
+
+        public override string ToString()
+        {
+            return $"Метод ToString для класса Circle:\nКоординаты центра окружности: x = {x}, y = {y}\nРадиус окружности = {checkR}, цвет {Color}";
         }
     }
 }

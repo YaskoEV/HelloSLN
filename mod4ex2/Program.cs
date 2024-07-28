@@ -28,7 +28,7 @@ namespace mod4ex2
                 size--;
             }
 
-            for (int i = 31, j = 0; i >= 0; i--, j++)
+            for (int i = 31; i >= 0; i--)
             {
                 //Console.Write(strX[i]);
                 strXRes.Append(strX[i]);

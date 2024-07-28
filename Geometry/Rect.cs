@@ -2,7 +2,7 @@
 
 namespace Geometry
 {
-    class Rect 
+    class Rect : Shape
     {
         Fdata fd;
 
@@ -30,8 +30,9 @@ namespace Geometry
             fd.x0 += dx;
             fd.y0 += dy;
         }
-        public void PrintInfo()
+        public override void Draw()
         {
+            Console.WriteLine("Прямоугольник:");
             Console.Write(fd.type + ":" + fd.x0 + "," + fd.y0 + " color=" + fd.color);
             Console.WriteLine(" a="+a+" b="+b);
         }
