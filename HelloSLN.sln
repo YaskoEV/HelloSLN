@@ -13,23 +13,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabForLesson2", "LabForLess
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operators", "Operators\Operators.csproj", "{CA8A77B6-AC64-49D2-873B-47EF0ABA404C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crows", "Crows\Crows.csproj", "{732646AE-808A-4D11-8DFC-B1849039E277}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crows", "Crows\Crows.csproj", "{732646AE-808A-4D11-8DFC-B1849039E277}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterations", "Iterations\Iterations.csproj", "{C1EF1F44-27E3-471B-9A5C-50983FCE7C41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iterations", "Iterations\Iterations.csproj", "{C1EF1F44-27E3-471B-9A5C-50983FCE7C41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIBONACHI", "FIBONACHI\FIBONACHI.csproj", "{CCC94452-7139-43F3-8274-C5E7B8C2CF9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FIBONACHI", "FIBONACHI\FIBONACHI.csproj", "{CCC94452-7139-43F3-8274-C5E7B8C2CF9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mod3ex1", "mod3ex1\mod3ex1.csproj", "{183BBB49-8E3B-411C-970A-EB9CAAD3A9D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mod3ex1", "mod3ex1\mod3ex1.csproj", "{183BBB49-8E3B-411C-970A-EB9CAAD3A9D9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mod3ex2", "..\C# 12.0\Labs\Labs\mod3\Geometry\mod3ex2.csproj", "{8F297ECE-BE92-4B89-BB2E-58C4C20ABDF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methods", "Methods\Methods.csproj", "{836A7054-A5D7-405B-AD2E-D0305F5FAD3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Methods", "Methods\Methods.csproj", "{836A7054-A5D7-405B-AD2E-D0305F5FAD3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{3CD00C49-930C-4AC6-84D2-508EEDA94E85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "Arrays\Arrays.csproj", "{3CD00C49-930C-4AC6-84D2-508EEDA94E85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.csproj", "{3D73CA3A-B348-460A-BBBC-5DF610A7D9F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strings", "Strings\Strings.csproj", "{3D73CA3A-B348-460A-BBBC-5DF610A7D9F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mod4ex1", "mod4ex1\mod4ex1.csproj", "{A25C7667-D703-4E2E-BC4B-D114D4655F3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mod4ex1", "mod4ex1\mod4ex1.csproj", "{A25C7667-D703-4E2E-BC4B-D114D4655F3C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Geometry", "..\C# 12.0\Labs\Labs\mod5\Geometry\Geometry.csproj", "{D5CC5B81-2C34-47B6-9E2A-5AB38DE5CFA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{A25C7667-D703-4E2E-BC4B-D114D4655F3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A25C7667-D703-4E2E-BC4B-D114D4655F3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A25C7667-D703-4E2E-BC4B-D114D4655F3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5CC5B81-2C34-47B6-9E2A-5AB38DE5CFA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5CC5B81-2C34-47B6-9E2A-5AB38DE5CFA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5CC5B81-2C34-47B6-9E2A-5AB38DE5CFA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5CC5B81-2C34-47B6-9E2A-5AB38DE5CFA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
