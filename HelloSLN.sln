@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mod4ex1", "mod4ex1\mod4ex1.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Geometry", "Geometry\Geometry.csproj", "{3DD4E2C8-C147-472F-8EE1-EBC9A748A639}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateProject", "DateProject\DateProject.csproj", "{7EE625F4-5620-42C7-B15C-3E2F9A9B629A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{3DD4E2C8-C147-472F-8EE1-EBC9A748A639}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DD4E2C8-C147-472F-8EE1-EBC9A748A639}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DD4E2C8-C147-472F-8EE1-EBC9A748A639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE625F4-5620-42C7-B15C-3E2F9A9B629A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE625F4-5620-42C7-B15C-3E2F9A9B629A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE625F4-5620-42C7-B15C-3E2F9A9B629A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE625F4-5620-42C7-B15C-3E2F9A9B629A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
