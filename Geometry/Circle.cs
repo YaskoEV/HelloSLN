@@ -67,5 +67,11 @@ namespace Geometry
         {
             return $"Метод ToString для класса Circle:\nКоординаты центра окружности: x = {x}, y = {y}\nРадиус окружности = {checkR}, цвет {Color}";
         }
+
+        public static explicit operator Point(Circle circle)
+        {
+            return new Point(circle.x, circle.y, circle.Color);
+        }
+
     }
 }

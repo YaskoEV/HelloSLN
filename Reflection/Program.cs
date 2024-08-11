@@ -15,7 +15,7 @@ namespace Reflection
             Assembly assembly = Assembly.GetExecutingAssembly();
 
             Console.WriteLine(assembly.GetTypes());
-
+            /*
             StringBuilder sb = new StringBuilder();
 
 
@@ -54,6 +54,7 @@ namespace Reflection
 
             GC.Collect();
             Console.ReadLine();
+            */
 
             //int a = 5; int b = 5;
 
@@ -66,34 +67,48 @@ namespace Reflection
 
 
 
-            //Type[] types = assembly.GetTypes();
-            //foreach (Type t in types)
-            //{
-            //    Console.WriteLine(t.FullName);
-            //    PropertyInfo[] propInfo = t.GetProperties();
-            //    foreach (PropertyInfo pi in propInfo)
-            //    {
-            //        Console.WriteLine(pi.PropertyType.Name);
-            //        Console.WriteLine(pi.Name);
-            //        Console.WriteLine(pi.GetType().);
-            //    }
+            Type[] types = assembly.GetTypes();
+            foreach (Type t in types)
+            {
+                Console.WriteLine(t.FullName);
+
+                Attribute? attr = t.GetCustomAttribute(typeof(AuthorAttribute));
+                if (attr != null)
+                {
+                    Console.WriteLine(attr.ToString());
+                }
+
+                PropertyInfo[] propInfo = t.GetProperties();
+                foreach (PropertyInfo pi in propInfo)
+                {
+                    Console.WriteLine(pi.PropertyType.Name);
+                    Console.WriteLine(pi.Name);
+                    Console.WriteLine(pi.GetType().Name); 
+                }
 
 
+                Console.WriteLine();
 
+                MethodInfo[] methodInfo = t.GetMethods();
+                foreach (MethodInfo method in methodInfo)
+                {
+                    if (method.IsPublic)
+                    {
+                        Attribute? methodAttr = method.GetCustomAttribute(typeof(LabelAttribute));
+                        if (methodAttr != null)
+                            Console.WriteLine("\t{0} public {1} {2}()", ((LabelAttribute)methodAttr).Label, method.ReturnType, method.Name);
+                        //Console.WriteLine("Тип возвращаемого значения {0} для метода {1};", method.ReturnType, method.Name);
+                    }
+                    
+                    //Type typeInt = method.ReturnType;
+                    //bool res = true;
+                    //if (typeInt != null)
+                    //  Convert.ToBoolean(typeInt);
 
-            //MethodInfo[] methodInfo = t.GetMethods();
-            //foreach (MethodInfo method in methodInfo)
-            //{
-            //    Console.WriteLine("Тип возвращаемого значения {0} для метода {1};", method.ReturnType, method.Name);
-            //    //Type typeInt = method.ReturnType;
-            //    //bool res = true;
-            //    //if (typeInt != null)
-            //      //  Convert.ToBoolean(typeInt);
-
-            //    //Console.WriteLine("Преобразованный тип возвращаемого значения {0} для метода {1};", typeInt, method.Name);
-            //    //Console.WriteLine(method.GetParameters());
-            //}
-            //}
+                    //Console.WriteLine("Преобразованный тип возвращаемого значения {0} для метода {1};", typeInt, method.Name);
+                    //Console.WriteLine(method.GetParameters());
+                }
+            }
 
         }
         

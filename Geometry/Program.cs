@@ -97,6 +97,51 @@ namespace Geometry
             Shape[] shapes = { romb, rect, rt, c, l };
             DrawScene(shapes);
 
+
+            {
+                Point p1 = new Point(10, 20);
+                Point p2 = new Point(30, 10);
+                Point p3 = p1.Add(p2);
+                Point p4 = p3 + p2;
+
+                Console.WriteLine();
+                Console.WriteLine("Перегрузка операций");
+                p1.Draw();
+                p2.Draw();
+                p3.Draw();
+                p4.Draw();
+
+                p4 = p3 + 5;
+                Console.WriteLine("Перегрузка операций Новый p4 + справа");
+                p4.Draw();
+
+                p4 = 7 + p3;
+                Console.WriteLine("Перегрузка операций Новый p4 + слева");
+                p4.Draw();
+
+                Point pp1 = new Point(1, 1);
+                Point pp2 = new Point(1, 1);
+
+                Console.WriteLine();
+                Console.WriteLine("Сравнить рр1 и рр2");
+                Console.WriteLine(pp1 == pp2);
+
+                Console.WriteLine();
+                Console.WriteLine("Сравнить рр1 и рр2 через Equals");
+                Console.WriteLine(pp1.Equals(pp2));
+
+                double d = (double)p1;
+                Circle circle = new Circle(10, 20, 30);
+                Point point = (Point)circle;
+
+                Console.WriteLine();
+                Console.WriteLine("Индексы координат перегрузка");
+                Console.WriteLine(pp1[0]);
+                Console.WriteLine(pp1[1]);
+
+
+            }
+
         }
 
         public static void DrawScene(Shape[] shapes)
@@ -110,9 +155,10 @@ namespace Geometry
                 Console.WriteLine();
                 Console.Write($"{i}: ");
                 shape.Draw();
-            }        
+            }
         }
 
+        
 
         //public static void Print(object[] data)
         //{
